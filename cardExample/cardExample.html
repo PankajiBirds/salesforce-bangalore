@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="LWC Card Example" icon-name="standard:contact">
+        <div class="slds-m-around_medium">
+            <div>
+                Hello Lightning Card
+            </div>
+            <div>
+                Good evening all
+            </div>
+            <div>
+                <b style="color: hotpink;"> Username : </b> {username}
+            </div>
+            <div>
+                <b style="color:green"> Status : </b> {status}
+            </div>
+        </div> 
+        <hr>
+        <div class="slds-m-around_medium">
+            <lightning-layout>
+                <lightning-layout-item>
+                    <!-- <label>Employee Name : </label> -->
+                    <lightning-formatted-text value={data.name}></lightning-formatted-text>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-m-left_medium">
+                    <lightning-formatted-phone value={data.contact}></lightning-formatted-phone>
+                </lightning-layout-item>
+                <lightning-layout-item  class="slds-m-left_medium">
+                    <lightning-formatted-email value={data.email}></lightning-formatted-email>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-m-left_medium">
+                    <lightning-formatted-text value={data.status}></lightning-formatted-text>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>       
+    </lightning-card>
+</template>
