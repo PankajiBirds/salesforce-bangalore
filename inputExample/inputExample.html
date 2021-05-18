@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Input Example" icon-name="custom:custom1">
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" label="Enter Username"></lightning-input>
+            <lightning-input type="number" label="Enter Contact #"></lightning-input>
+            <lightning-input type="date" label="Enter Date of Birth"></lightning-input>
+            <lightning-input type="datetime" label="Enter From Date / Time"></lightning-input>
+            <lightning-input type="email" label="Enter Email" required></lightning-input>
+            <lightning-input type="password" label="Enter Password"></lightning-input>
+            <hr/>
+            <div>
+                <lightning-button label="Button 1"></lightning-button>
+                <span class="slds-m-left_large">
+                    <lightning-button label="Button 2" variant="brand"></lightning-button>
+                </span>
+                <span class="slds-m-left_large">
+                    <lightning-button label="Hello Alert" variant="success" onclick={handleAlert}></lightning-button>
+                </span>
+                <span class="slds-m-left_large">
+                    <lightning-button label="Disabled" disabled></lightning-button>
+                </span>
+            </div>
+            <br/>
+            <div>
+                <span class="slds-m-top_large">
+                    <lightning-button label="Remove" variant="destructive" icon-name="utility:delete"></lightning-button>
+                </span>
+            </div>
+        </div>
+    </lightning-card>
+</template>

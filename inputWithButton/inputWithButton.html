@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Input With Button Example" icon-name="custom:custom3">
+        <div class="slds-m-around_medium">
+            <!--
+            <lightning-input type="text" label="Enter Username" class="username"></lightning-input>
+            <lightning-input type="email" label="Enter Email" value={email} class="email"></lightning-input>
+            <lightning-input type="number" label="Enter Contact #" value="+918619251496" class="contact"></lightning-input>
+            <lightning-input type="password" label="Enter Password" class="password"></lightning-input>
+            -->
+
+            <lightning-input type="text" label="Enter Username" class="forInput"></lightning-input>
+            <lightning-input type="email" label="Enter Email" value={email} class="forInput"></lightning-input>
+            <lightning-input type="number" label="Enter Contact #" value="+918619251496" class="forInput"></lightning-input>
+            <lightning-input type="password" label="Enter Password" class="forInput"></lightning-input>
+
+            <div class="slds-m-top_large" style="float:right">
+                <lightning-button label="Click Me" variant="brand" onclick={handleClickMe}></lightning-button>
+            </div>
+
+            <hr/>
+            
+            <b>Username : </b>{username}
+            <br/>
+            <b>Email : </b>{email}
+            <br/>
+            <b>Contact # : </b>{contact}
+            <br/>
+            <b>Password : </b>{password}
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Change Event With Input" icon-name="custom:custom2">
+        <div class="slds-m-around_medium">
+            <!--
+            <lightning-input type="text" label="Enter Username" onchange={handleUsername}></lightning-input>
+            <lightning-input type="email" label="Enter Email" onchange={handleEmail}></lightning-input>
+            <lightning-input type="number" label="Enter Contact #" onchange={handleContact}></lightning-input>
+            -->
+
+            <lightning-input type="text" label="Enter Username" name="username" onchange={handleInput}></lightning-input>
+            <lightning-input type="email" label="Enter Email" name="email" onchange={handleInput}></lightning-input>
+            <lightning-input type="number" label="Enter Contact #" name="contact" onchange={handleInput}></lightning-input>
+
+            <hr/>
+            
+            <b>Username : </b>{username}
+            <br/>
+            <b>Email : </b>{email}
+            <br/>
+            <b>Contact # : </b>{contact}
+        </div>
+    </lightning-card>
+</template>
