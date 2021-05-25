@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Dependant Picklist Example" icon-name="custom:custom13">
+        <div class="slds-m-around_large">
+            <lightning-combobox
+                label="Country"
+                options={countries}
+                onchange={handleCountry}
+            ></lightning-combobox>
+
+            <lightning-combobox
+                label="State"
+                options={states}
+                onchange={handleState}
+            ></lightning-combobox>
+
+            <lightning-combobox
+                label="City"
+                options={cities}
+            ></lightning-combobox>
+        </div>
+    </lightning-card>
+</template>
