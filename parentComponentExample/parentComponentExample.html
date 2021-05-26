@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Child to Parent Example" icon-name="custom:custom16">
+        <div class="slds-m-around_large">            
+            <c-child-component-example onsimple={handleSimpleEvent} onsimpledetail={handleSimpleDetailEvent}></c-child-component-example>            
+            
+            <!--
+            <c-child-component-example onsimpledetail={handleSimpleDetailEvent}></c-child-component-example>
+            -->
+        </div>
+        <hr/>
+        <div class="slds-m-around_large">
+            <div><b> Value from child component : </b>{message}</div>
+            <br/>
+            <div>
+                <b> Username : </b> {userDetail.username}                
+            </div>
+            <div>
+                <b> Email : </b> {userDetail.email}
+            </div>
+        </div>
+    </lightning-card>
+</template>

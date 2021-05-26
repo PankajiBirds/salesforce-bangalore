@@ -1,0 +1,12 @@
+<template>
+    <div>Hello this is the example of custom event</div>
+    <br/>
+    <lightning-button label="Sent to Parent" variant="brand" onclick={handleSendToParent}></lightning-button>
+    <br/>
+    <div>
+        <lightning-input type="text" label="Enter Username" class="forInput"></lightning-input>
+        <lightning-input type="email" label="Enter Email" class="forInput"></lightning-input>
+        <br/>
+        <lightning-button label="Send Detail" onclick={handleSendDetail}></lightning-button>
+    </div>
+</template>
