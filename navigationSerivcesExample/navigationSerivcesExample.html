@@ -1,0 +1,47 @@
+<template>
+    <lightning-card title="Navigation Example" icon-name="custom:custom56">
+        <div class="slds-m-around_medium">
+            <lightning-layout class="slds-m-bottom_large">
+                <lightning-layout-item>
+                    <lightning-button label="Home Page" onclick={handleHomePage}></lightning-button>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="slds-m-left_large">
+                    <lightning-button label="Chatter Page" onclick={handleChatterPage}></lightning-button>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="slds-m-left_large">
+                    <lightning-button label="Google" onclick={handleWebPage}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <lightning-layout class="slds-m-bottom_large">
+                <lightning-layout-item>
+                    <lightning-button label="New Account" onclick={handleNewAccount}></lightning-button>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="slds-m-left_large">
+                    <lightning-button label="Edit Account" onclick={handleEditAccount}></lightning-button>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="slds-m-left_large">
+                    <lightning-button label="View Account" onclick={handleViewAccount}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <lightning-layout class="slds-m-bottom_large">
+                <lightning-layout-item>
+                    <lightning-button label="Contact List" onclick={handleContactList}></lightning-button>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="slds-m-left_large">
+                    <lightning-button label="Account Relationship" onclick={handleAccountRelationShip}></lightning-button>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="slds-m-left_large">
+                    <lightning-button label="Contact Object" onclick={handleContactObject}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+</template>
